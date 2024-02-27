@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2023???6???13??? ??????1:12:00 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="entity.inBook" table="INBOOK">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="identity" />
+        </id>
+        <property name="BookName" type="java.lang.String">
+            <column name="BOOKNAME" />
+        </property>
+        <property name="BookNum" type="int">
+            <column name="BOOKNUM" />
+        </property>
+        <property name="FromName" type="java.lang.String">
+            <column name="FROMNAME" />
+        </property>
+        <property name="fprice" type="double">
+            <column name="FPRICE" />
+        </property>
+    </class>
+</hibernate-mapping>

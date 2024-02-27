@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2023???6???13??? ??????4:16:06 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="entity.dayxs" table="DAYXS">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="identity" />
+        </id>
+        <property name="bookname" type="java.lang.String">
+            <column name="BOOKNAME" />
+        </property>
+        <property name="xsday" type="java.util.Date">
+            <column name="XSDAY" />
+        </property>
+        <property name="soldprice" type="double">
+            <column name="SOLDPRICE" />
+        </property>
+        <property name="dayquanity" type="int">
+            <column name="DAYQUANITY" />
+        </property>
+    </class>
+</hibernate-mapping>

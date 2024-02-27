@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.password">05060405baekhyun</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/worker</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+        <property name="hibernate.transaction.auto_close_session">true</property>
+
+		<mapping resource="entity/inBook.hbm.xml" />
+		<mapping resource="entity/proBook.hbm.xml" />
+		<mapping resource="entity/kucun.hbm.xml" />
+		<mapping resource="entity/dayxs.hbm.xml" />
+		<mapping resource="entity/th.hbm.xml" />
+		<mapping resource="entity/monthxs.hbm.xml" />
+		<mapping resource="entity/admi.hbm.xml" />
+	</session-factory>
+</hibernate-configuration>

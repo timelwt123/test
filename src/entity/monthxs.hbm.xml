@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2023???6???13??? ??????10:08:33 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="entity.monthxs" table="MONTHXS">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="identity" />
+        </id>
+        <property name="bookname" type="java.lang.String">
+            <column name="BOOKNAME" />
+        </property>
+        <property name="monthxs" type="int">
+            <column name="MONTHXS" />
+        </property>
+        <property name="monsumprice" type="double">
+            <column name="MONSUMPRICE" />
+        </property>
+    </class>
+</hibernate-mapping>

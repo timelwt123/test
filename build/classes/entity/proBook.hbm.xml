@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2023???6???12??? ??????1:07:36 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="entity.proBook" table="FPRICE">
+       <composite-id name="pk" class="entity.proBookPK">
+             <key-property name="bookName" column="BOOKNAME" />  
+             <key-property name="fromName" column="FROMNAME"  />  
+        </composite-id>
+        <property name="Price" type="double">
+            <column name="PRICE" />
+        </property>
+    </class>
+</hibernate-mapping>
